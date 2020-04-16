@@ -78,6 +78,8 @@ router.post('/:id/steps', (req, res) => {
   });
 });
 
+//unsure aoout this. Doesn't work in Postman
+
 router.put('/:id', (req, res) => {
   const { id } = req.params;
   const changes = req.body;
