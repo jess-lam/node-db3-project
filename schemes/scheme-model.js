@@ -28,6 +28,7 @@ function add(schemeData) {
 }
 
 //works on Postman
+
 function findSteps(id) {
     return db('steps as s')
     .join('schemes as k', 'k.id', 's.scheme_id')

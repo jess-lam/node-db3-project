@@ -24,3 +24,10 @@ Select o.Id, c.CompanyName, e.LastName
 From [Order] as o
 Join [Customer] as c ON o.CustomerId = c.Id
 Join [Employee] as e ON o.EmployeeId = e.Id
+
+-- Stretch 1
+SELECT c.CategoryName, count(p.CategoryID) as Count
+From Categories as c
+Join Products as p
+ON p.CategoryID = c.CategoryID
+Group by CategoryName
